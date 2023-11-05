@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Máquinas</title>
+    <link rel="stylesheet" href="admin-maquinas.css"> <!-- Enlaza a tu archivo CSS (opcional) -->
+</head>
+<body>
+    <header>
+        <h1>Administración de Máquinas</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Agregar Máquina</h2>
+            <form action="procesar_agregar_maquina.php" method="POST">
+                <label for="nombre">Nombre de la Máquina:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <label for="estado">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value="activa">Activa</option>
+                    <option value="inactiva">Inactiva</option>
+                </select>
+                <input type="submit" value="Agregar Máquina">
+            </form>
+        </section>
+
+        <section>
+            <h2>Lista de Máquinas</h2>
+            <ul>
+                <li>Máquina 1 - Estado: Activa (<a href="editar_maquina.php?id=1">Editar</a>)</li>
+                <li>Máquina 2 - Estado: Inactiva (<a href="editar_maquina.php?id=2">Editar</a>)</li>
+                <!-- Lista de máquinas existentes -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Gimnasio XYZ &copy; 2023</p>
+    </footer>
+</body>
+</html>

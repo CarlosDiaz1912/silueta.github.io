@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Personal</title>
+    <link rel="stylesheet" href="admin-personal.css"> <!-- Enlaza a tu archivo CSS (opcional) -->
+</head>
+<body>
+    <header>
+        <h1>Administración de Personal</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Agregar Nuevo Personal</h2>
+            <form action="procesar_agregar_personal.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+                <label for="puesto">Puesto:</label>
+                <input type="text" name="puesto" id="puesto" required>
+                <input type="submit" value="Agregar Personal">
+            </form>
+        </section>
+
+        <section>
+            <h2>Modificar Información del Personal</h2>
+            <form action="procesar_modificar_personal.php" method="POST">
+                <label for="id">ID del Personal:</label>
+                <input type="text" name="id" id="id" required>
+                <label for="nuevo_nombre">Nuevo Nombre:</label>
+                <input type="text" name="nuevo_nombre" id="nuevo_nombre" required>
+                <label for="nuevo_puesto">Nuevo Puesto:</label>
+                <input type="text" name="nuevo_puesto" id="nuevo_puesto" required>
+                <input type="submit" value="Modificar Información">
+            </form>
+        </section>
+
+        <section>
+            <h2>Modificar Horario del Personal</h2>
+            <form action="procesar_modificar_horario.php" method="POST">
+                <label for="id">ID del Personal:</label>
+                <input type="text" name="id" id="id" required>
+                <label for="nuevo_horario">Nuevo Horario:</label>
+                <input type="text" name="nuevo_horario" id="nuevo_horario" required>
+                <input type="submit" value="Modificar Horario">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Gimnasio XYZ &copy; 2023</p>
+    </footer>
+</body>
+</html>

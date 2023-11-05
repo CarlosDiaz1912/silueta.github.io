@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Membresías</title>
+    <link rel="stylesheet" href="admin-membresias.css"> <!-- Enlaza a tu archivo CSS (opcional) -->
+</head>
+<body>
+    <header>
+        <h1>Administración de Membresías</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Modificar Membresía</h2>
+            <form action="procesar_modificacion.php" method="POST">
+                <label for="membresia">Selecciona una membresía:</label>
+                <select name="membresia" id="membresia">
+                    <option value="1">Membresía Básica</option>
+                    <option value="2">Membresía Premium</option>
+                    <option value="3">Membresía VIP</option>
+                </select>
+                <label for="nuevo_precio">Nuevo Precio:</label>
+                <input type="text" name="nuevo_precio" id="nuevo_precio">
+                <input type="submit" value="Modificar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Gimnasio XYZ &copy; 2023</p>
+    </footer>
+</body>
+</html>
